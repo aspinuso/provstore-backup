@@ -25,7 +25,7 @@ scripts.
     Your documents will be saved in the [PROV-JSON
 representation](https://openprovenance.org/prov-json/).
 
-Optionally, you can also specified the path where the downloaded documents will
+Optionally, you can also specify the path where the downloaded documents will
 be stored with `-p <path>`. The script will save a `meta.csv` file to store the
 documents' metadata along with the documents.
 
@@ -36,7 +36,7 @@ documents' metadata along with the documents.
     ```bash
     ./provstore-upload.py <username> <api_key>
     ```
-    The script expects to find the `meta.csv` file previously created by the backup script above in the current working folder. You can also specify a different path folder containing the downloaded documents with `-p <path>`.
+    The script expects to find the `meta.csv` file previously created by the backup script above in the current working folder. You can also specify a different path to the folder containing the downloaded documents with `-p <path>`.
 
 You can interrupt the upload script at any time. The script keeps the status of the current upload in a `status.csv` file so it can resume the uploading from where it was stopped.
 
