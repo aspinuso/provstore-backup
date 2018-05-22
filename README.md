@@ -44,7 +44,7 @@ You can interrupt the upload script at any time. The script keeps the status of 
 
 If you encounter an issue using the scripts above, try to rerun them with the debug option `-d` to see what the issue is.
 
-Please check if someone has already got a [similar issue](issues) before [creating a new issue](issues/new).
+Please check if someone has already got a [similar issue](https://github.com/trungdong/provstore-backup/issues) before [creating a new issue](https://github.com/trungdong/provstore-backup/issues/new).
 
 
 Copyright &copy; 2018 Trung Dong Huynh.
