@@ -12,6 +12,9 @@ your provenance documents on ProvStore.
 * [provstore-upload.py](provstore-upload.py) script: to upload your backup
 documents back to the new ProvStore.
 
+In order to run the scripts, you will need [Python 3](http://docs.python-guide.org/en/latest/starting/installation/)
+and the [requests Python package](http://docs.python-requests.org/).
+
 Use the `--help` option to check the required parameters to use the above
 scripts.
 
