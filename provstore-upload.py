@@ -108,7 +108,8 @@ if __name__ == "__main__":
 
                 logger.debug('Uploading document #%s <%s>...', row['id'], row['document_name'])
                 try:
-                    with open(base_path / row['filename']) as f:
+                    filepath = base_path / row['filename']
+                    with filepath.open() as f:
                         doc_content = f.read()
                     payload = json.dumps({
                         'content': doc_content,

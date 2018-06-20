@@ -75,7 +75,9 @@ if __name__ == "__main__":
 
     count_success = count_failed = count_skipped = 0
 
-    with open(base_path / 'meta.csv', 'w') as meta_file:
+    meta_filepath = base_path / 'meta.csv'
+
+    with meta_filepath.open('w') as meta_file:
         meta_writer = csv.DictWriter(
             meta_file,
             fieldnames=['id', 'document_name', 'created_at', 'public', 'views_count', 'filename', 'backup_status'],
@@ -95,7 +97,7 @@ if __name__ == "__main__":
                 else:
                     r = requests.get(base_url + '/store/api/v0/documents/' + filename, headers=headers, stream=True)
                     if r.ok:
-                        with open(path, 'wb') as fd:
+                        with path.open('wb') as fd:
                             for chunk in r.iter_content(chunk_size=4096):
                                 fd.write(chunk)
                         print('   Saved to: %s' % filename)
